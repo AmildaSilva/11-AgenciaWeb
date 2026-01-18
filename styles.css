@@ -1,15 +1,18 @@
+/* Reset CSS */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* estilo Global  */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
 }
 
+/* cabeçalho */
 header {
     background-color: #000;
     padding: 1rem;
@@ -17,25 +20,25 @@ header {
     justify-content: space-between;
     align-items: center;
 }
-
-
-
+/* menu */
 nav ul {
     list-style: none;
     display: flex;
     gap: 2rem;
 }
 
+/* links do menu */
 nav a {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
 }
-
+/* efeito hover nos links do menu */
 nav a:hover {
     color: #ff4500;
 }
 
+/* Seções */
 section {
     padding: 4rem 2rem;
 }
@@ -71,26 +74,7 @@ section {
     padding: 2rem;
 }
 
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #servicos {
-        grid-template-columns: 1fr;
-    }
-}
-@media(min-windth:1200px) {
-    #sobre {
-        flex-direction: row;
-    }
-    nav ul {
-        flex-direction: row;
-    }
-    
-}
-
+/* Formulário de Contato */
 form {
     display: flex;
     flex-direction: column;
@@ -119,7 +103,7 @@ button {
 button:hover {
     background-color: #000;
 }
-
+/* Depoimentos */
 #depoimentos {
     display: flex;
     flex-wrap: wrap;
@@ -131,7 +115,7 @@ button:hover {
     color: #0c0c0c;
     background-color: #f7f7f7;
 }
-
+/* Estilo para as imagens dos depoimentos */
 img {
     width: 200px;
     height: 200px;
@@ -140,6 +124,7 @@ img {
     margin-bottom: 10px;
 }
 
+
 .logo {
     width: 10rem;
     height: auto;
@@ -147,9 +132,12 @@ img {
     margin: 0 auto;
     border-radius: 50%;
 }
+
 #depoimentos p {
     max-width: 200px;
 }
+
+/* Rodapé */
 #contato p {
     font-size: 16px;
     margin: 5px 0;
@@ -165,9 +153,31 @@ img {
 #contato button:hover {
     background-color: #000;
 }
+
 footer {
     background-color: #000;
     color:#000;
     padding: 1rem;
     margin-top: 2rem;
 }
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #servicos {
+        grid-template-columns: 1fr;
+    }
+}
+@media(min-windth:1200px) {
+    #sobre {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: row;
+    }
+    
+}
+

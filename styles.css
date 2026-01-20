@@ -147,6 +147,7 @@ img {
     background-color: #f0f0f0;
     padding: 2rem;
     text-align: center;
+    color: #000;
 
 }
 
@@ -155,10 +156,12 @@ img {
 }
 
 footer {
+    gap: 2rem;
     background-color: #000;
-    color:#000;
+    color:#fff;
     padding: 1rem;
     margin-top: 2rem;
+    text-align: center;
 }
 /* Responsividade */
 @media (max-width: 768px) {

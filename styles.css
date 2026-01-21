@@ -75,6 +75,14 @@
     max-width: 300px;
 }
 
+.depoimentos__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Tornar a imagem circular */
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
 .contato {
     background-color: #f0f0f0;
     text-align: center;
@@ -100,15 +108,6 @@
     max-width: 500px;
     margin: auto;
 
-}
-
-.depoimentos__img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    /* Tornar a imagem circular */
-    object-fit: cover;
-    margin-bottom: 10px;
 }
 
 

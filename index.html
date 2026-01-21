@@ -6,71 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agência Criativa Web</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="layout.css">
 </head>
 
 <body>
     <header>
-        <img src="logo.jpeg" alt="Logo Agência XYZ" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobre">Sobre Nós</a></li>
-                <li><a href="#servicos">Serviços</a></li>
-                <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#contato">Contato</a></li>
+        <img src="imagens/logo.jpeg" alt="Logo Agência Criativa Web" class="logo">
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item nav__item--active"><a class="nav__link nav__link--active" href="#home">Home</a></li>
+                <li class="nav__item "><a class="nav__link " href="#sobre">Sobre Nós</a></li>
+                <li class="nav__item"><a class="nav__link" href="#servicos">Serviços</a></li>
+                <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="home">
+    <section class="home">
         <h1>Bem-vindo à Agência Criativa Web!</h1>
         <p>Somos especialistas em criar experiências incríveis para o seu negócio.</p>
     </section>
 
-    <section id="sobre">
+    <section class="sobre">
         <h2>Sobre Nós</h2>
         <p>Somos a **Agência Criativa Web**, onde a inovação encontra a paixão por criar experiências digitais que fazem
             a diferença. Entregamos soluções web que conectam, engajam e transformam.</p>
     </section>
 
-    <section id="servicos">
+    <section class="servico">
         <h2>Serviços</h2>
-        <div class="servico">Design Gráfico</div>
-        <div class="servico">Desenvolvimento Web</div>
-        <div class="servico">Branding</div>
+        <div class="servico__item">Design Gráfico</div>
+        <div class="servico__item">Desenvolvimento Web</div>
+        <div class="servico__item">Branding</div>
     </section>
 
-    <section id="depoimentos" class="depoimentos">
+    <section class="depoimentos">
         <h2>Depoimentos</h2>
-        <p>Ana Luiza Silva, Designer Gráfico - "Trabalhar com a Agência Criativa Web foi uma experiência transformadora.
+        <p class="depoimentos__text">Ana Luiza Silva, Designer Gráfico - "Trabalhar com a Agência Criativa Web foi uma experiência transformadora.
             Eles realmente entendem as necessidades do cliente."</p>
-        <img src="ana300x300.jpg" srcset="ana300x300.jpg 300w, ana600x600.jpg 600w, ana900x900.jpg 900w" sizes="(max-width: 600px) 300px,
+        <img class="depoimentos__img" src="imagens/ana300x300.jpg" srcset="imagens/ana300x300.jpg 300w, imagens/ana600x600.jpg 600w, imagens/ana900x900.jpg 900w" sizes="(max-width: 600px) 300px,
                 (max-width: 900px) 600px, 900px" alt="Ana Luiza Silva" />
-        <p>Carlos Eduardo, CEO da Tech Solutions - "Eu amo a Agência Criativa Web! Eles criaram um site incrível para a
+        <p class="depoimentos__text">Carlos Eduardo, CEO da Tech Solutions - "Eu amo a Agência Criativa Web! Eles criaram um site incrível para a
             minha empresa."</p>
-        <img src="carlos300x300.jpg" srcset="carlos300x300.jpg 300w, carlos600x600.jpg 600w, carlos900x900.jpg 900w" sizes="(max-width: 600px) 300px,
+        <img class="depoimentos__img" src="imagens/carlos300x300.jpg" srcset="imagens/carlos300x300.jpg 300w, imagens/carlos600x600.jpg 600w, imagens/carlos900x900.jpg 900w" sizes="(max-width: 600px) 300px,
                 (max-width: 900px) 600px, 900px" alt="Carlos Eduardo" />
-        <p>Mariana Chen, Empreendedora - "A equipe da Agência Criativa Web é super talentosa e dedicada. Recomendo
+        <p class="depoimentos__text">Mariana Chen, Empreendedora - "A equipe da Agência Criativa Web é super talentosa e dedicada. Recomendo
             muito!"</p>
-        <img src="mariana300x300.jpg" srcset="mariana300x300.jpg 300w, mariana600x600.jpg 600w, mariana900x900.jpg 900w" sizes="(max-width: 600px) 300px,
+        <img class="depoimentos__img" src="imagens/mariana300x300.jpg" srcset="imagens/mariana300x300.jpg 300w, imagens/mariana600x600.jpg 600w, imagens/mariana900x900.jpg 900w" sizes="(max-width: 600px) 300px,
                 (max-width: 900px) 600px, 900px" alt="Mariana Chen" />
     </section>
 
     <footer>
-        <section id="contato">
+        <section class="contato">
             <h2>Contato</h2>
-            <p>Endereço: Rua Criativa, 123</p>
-            <p>Telefone: (01) 234-56789</p>
-            <p>Email: contato@agencicriativa.com</p>
-            <form>
-                <input type="text" placeholder="Nome">
-                <input type="email" placeholder="Email">
-                <textarea placeholder="Mensagem"></textarea>
-                <button>Enviar</button>
+            <p class="contato__text">Endereço: Rua Criativa, 123</p>
+            <p class="contato__text">Telefone: (01) 234-56789</p>
+            <p class="contato__text">Email: contato@agencicriativa.com</p>
+            <form class="contato__form">
+                <input class="contato__input" type="text" placeholder="Nome">
+                <input class="contato__input" type="email" placeholder="Email">
+                <textarea class="contato__textarea" placeholder="Mensagem"></textarea>
+                <button class="contato__button">Enviar</button>
             </form>
         </section>
         <p>&copy; 2026 Agência Criativa Web. Todos os direitos reservados.</p>
     </footer>
+    
 </body>
 
 </html>

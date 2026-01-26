@@ -1,0 +1,24 @@
+@use 'variaveis';
+@use 'mixins';
+
+header {
+    background-color: variaveis.$cor-fundo-preto;
+    padding: variaveis.$espacamento-padrao;
+    display: flex;
+    justify-content: space-between;
+    align-items: variaveis.$alinhamento-intens;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+footer {
+    gap: variaveis.$espaçamento-entre-intens;
+    background-color: variaveis.$cor-fundo-preto;
+    color: variaveis.$cor-branca;
+    @include mixins.espaçamento-padrao;
+    margin-top: 100px;
+    text-align: variaveis.$alinhamento-texto;
+}
+

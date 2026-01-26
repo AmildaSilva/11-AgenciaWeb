@@ -1,0 +1,142 @@
+@use 'variaveis';
+@use 'mixins';
+
+.logo {
+    width: 10rem;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.nav__list {
+    list-style: none;
+    display: variaveis.$display-padrao;
+    gap: variaveis.$espaçamento-entre-intens;
+
+    &__link {
+        color: variaveis.$cor-branca;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+
+    &__link:hover {
+
+        color: variaveis.$cor-laranja;
+    }
+
+    &__link--active {
+
+        font-weight: bold;
+        border-bottom: 2px solid variaveis.$cor-laranja;
+
+    }
+
+}
+
+
+.home {
+    background-image: linear-gradient(to bottom, variaveis.$cor-laranja, variaveis.$cor-preto);
+    color: variaveis.$cor-branca;
+    text-align: variaveis.$alinhamento-texto;
+}
+
+.servico {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: variaveis.$espaçamento-entre-intens;
+    background-color: variaveis.$cor-cinza;
+    color: variaveis.$cor-branca;
+
+    &__item {
+        background-color: variaveis.$cor-branca;
+        padding: variaveis.$espacamento-duplo;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: variaveis.$alinhamento-texto;
+        color: variaveis.$cor-preto;
+    }
+}
+
+
+
+.sobre {
+    display: variaveis.$display-padrao;
+    align-items: variaveis.$alinhamento-intens;
+    gap: variaveis.$espaçamento-entre-intens;
+    background-color: variaveis.$cor-fundo-branca;
+    padding: variaveis.$espacamento-duplo;
+}
+
+
+.depoimentos {
+    display: variaveis.$display-padrao;
+    justify-content: space-around;
+    gap: variaveis.$espaçamento-entre-intens;
+    margin: 20px;
+    text-align: variaveis.$alinhamento-texto;
+    font-size: 16px;
+    color: variaveis.$cor-preto;
+    background-color: variaveis.$cor-fundo-branca;
+
+    &__text {
+        max-width: 100px;
+    }
+
+
+    &__img {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        /* Tornar a imagem circular */
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+}
+
+
+.contato {
+    background-color: variaveis.$cor-fundo-branca;
+    text-align: variaveis.$alinhamento-texto;
+    color: variaveis.$cor-preto;
+    padding: 4rem 2rem;
+
+
+    &__button--hover {
+        background-color: variaveis.$cor-fundo-preto;
+    }
+
+
+    &__text {
+        font-size: 16px;
+        margin: 5px 0;
+        color: variaveis.$cor-preto;
+    }
+
+    &__form {
+        display: variaveis.$display-padrao;
+        flex-direction: column;
+        gap: variaveis.$metadeespacamento-entre-intens;
+        max-width: 500px;
+        margin: auto;
+
+    }
+
+    &__input {
+        padding: 0.8rem;
+        border: 1px solid variaveis.$cor-cinza;
+        border-radius: 4px;
+    }
+
+    &__textarea {
+        padding: 0.8rem;
+        border: 1px solid variaveis.$cor-cinza;
+        border-radius: 4px;
+    }
+
+    &__button {
+        
+        @include mixins.botao-basico;
+    }
+
+}

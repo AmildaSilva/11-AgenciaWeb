@@ -1,0 +1,15 @@
+@use 'variaveis';
+
+@mixin espaçamento-padrao {
+  padding: variaveis.$espacamento-padrao;
+}
+
+@mixin botao-basico{
+    background-color: variaveis.$cor-laranja;
+    color: variaveis.$cor-branca;
+    border: none;
+    padding: variaveis.$espacamento-padrao;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px; 
+}   

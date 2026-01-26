@@ -1,0 +1,15 @@
+@use "sass:math";
+$cor-preto: #000;
+$cor-cinza: #333;
+$cor-branca: #fff;
+$espacamento-padrao: 1rem;
+$alinhamento-intens: center;
+$cor-laranja: #ff4500;
+$display-padrao: flex;
+$cor-fundo-preto: #333;
+$cor-fundo-branca: #f7f7f7;
+$flex-direction: column;
+$espaçamento-entre-intens: 2rem;
+$metadeespacamento-entre-intens: math.div($espaçamento-entre-intens, 2);
+$alinhamento-texto: center;
+$espacamento-duplo:calc($espacamento-padrao * 2);
